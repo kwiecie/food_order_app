@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 1rem;
+    background-color: #ffc404;
+  }
+  
+  .header h1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #2c2304;
+  }
+  
+  .header #title img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #2c2304;
+  }
+  
+  .header button {
+    max-height: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+  }
