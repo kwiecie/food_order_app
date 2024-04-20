@@ -1,11 +1,14 @@
 import styles from './Header.module.css';
-import HeaderCartIcon from './HeaderCartIcon';
+import HeaderCartButton from './HeaderCartButton';
 
-export default function Header () {
+export default function Header (props) {
     return (
         <header className={styles.header}>
-            <h1 className={styles.headerTitle}>Food </h1>
-            <HeaderCartIcon className={styles.headerButton}/>
+            <h1 className={styles.header}>Food App</h1>
+            <HeaderCartButton 
+                className={styles.header}
+                onClick={props.onOpenCart}
+            />
         </header>
     )
 }

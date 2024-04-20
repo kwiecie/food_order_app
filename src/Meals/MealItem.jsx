@@ -4,6 +4,8 @@ import Button from "../UI/Button";
 import MealForm from "./MealForm";
 
 export default function MealItem (props) {
+    //const price = `$${props.price?.toFixed(2)}`;
+
     return (
         <div className={styles.mealItem}>
             <h3 className={styles.mealItem}>{props.name}</h3>
@@ -12,8 +14,7 @@ export default function MealItem (props) {
                 <p className={styles.mealItemDescription}>{props.description}</p>
             </div>
             <div className={styles.mealItemActions}>
-                <MealForm></MealForm>
-                <Button>Add to the cart</Button>
+                <MealForm />
             </div>
         </div>
     );

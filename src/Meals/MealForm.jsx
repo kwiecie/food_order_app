@@ -3,7 +3,7 @@ export default function MealForm () {
         <form>
             <label htmlFor="Amount"></label>
             <input id="amount_" type="number" min={1} max={5} defaultValue={1}></input>
-            <button>Submit</button>
+            <button type="submit">Add</button>
         </form>
     )
 }
