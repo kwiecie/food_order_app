@@ -8,8 +8,8 @@ export default function HeaderCartIcon (props) {
 
     const { items } = cartCtx;
 
-    const numberOfCartItems = items.reduce((currentNumber, item) => 
-        currentNumber + item.amount, 0);
+    const numberOfCartItems = items?.reduce((currentNumber, item) => 
+        currentNumber + item.quantity, 0);
 
     return (
         <button className={styles.button} onClick={props.onClick}>
