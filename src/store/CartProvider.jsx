@@ -13,7 +13,8 @@ export default function CartProvider(props) {
         if (action.type === 'ADD_ITEM') {
             const updatedTotalAmount =
                 state.totalAmount + action.item.price * action.item.amount;
-
+            
+            // checking if added item is already in cart
             const existingCartItemIndex = state.items.findIndex(
                 item => item.id === action.item.id
             );
@@ -27,7 +28,9 @@ export default function CartProvider(props) {
                     amount: existingCartItem.amount + action.item.amount
                 };
             } else {
-                updatedItems = action.items.concat(action.item);
+                updatedItems = state.items.concat(action.item);
+                //updatedItems = action.items.concat(action.item);
+                //updatedItems = action.items.push(action.item);
             }
             return {
                 items: updatedItems,

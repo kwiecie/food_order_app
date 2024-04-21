@@ -2,6 +2,7 @@ import { useContext } from "react"
 import CartContext from "../store/cart-context";
 import CartItem from "./CartItem";
 import Modal from "../Layout/Modal";
+import styles from "./Cart.module.css";
 
 export default function Cart (props) {
     
@@ -16,7 +17,7 @@ export default function Cart (props) {
         cartCtx.addItem({...item, amount: 1});
     };
 
-    const cartItems = cartCtx?.map(item => (
+    const cartItems = cartCtx.items.map(item => (
         <CartItem 
             key={item.id}
             name={item.name}

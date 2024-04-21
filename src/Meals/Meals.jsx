@@ -32,6 +32,7 @@ export default function Meals () {
         <MealItem 
             key={meal.id} 
             id={meal.id} 
+            image={meal.image}
             name={meal.name} 
             price={meal.price} 
             description={meal.description} 
@@ -39,8 +40,8 @@ export default function Meals () {
     ));
 
     return (
-        <div className={styles.meals}>
-          <ul>
+        <div >
+          <ul id="meals" className={styles.meals}>
               {mealList}
           </ul>
         </div>
