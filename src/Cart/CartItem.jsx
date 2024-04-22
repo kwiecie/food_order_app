@@ -2,8 +2,6 @@ import styles from "./CartItem.module.css";
 import { currencyFormatter } from "../util/formatting";
 
 export default function CartItem (props) {
-    //const price = `$${props.price?.toFixed(2)}`;
-
     return (
         <li className={styles['cart-item']}>
             <div>
@@ -15,6 +13,7 @@ export default function CartItem (props) {
             </div>
             <div className={styles.actions}>
                 <button onClick={props.onAdd}>+</button>
+                {/* <p>{props.quantity}</p> */}
                 <button onClick={props.onRemove}>-</button>
             </div>
         </li>

@@ -1,5 +1,5 @@
 .meal-item {
-    max-width: 20rem;
+    max-width: 30rem;
     background-color: #1d1a16;
     border-radius: 1rem;
     overflow: hidden;
@@ -22,18 +22,21 @@
   
   .meal-item h3 {
     font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     margin: 0.75rem 0;
   }
   
   .meal-item-description {
     margin: 1rem;
+    font-family: 'Lato', sans-serif;
   }
   
   .meal-item-price {
     display: inline-block;
     background-color: #312c1d;
     color: #ffc404;
+    font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     font-weight: bold;
     padding: 0.5rem 2rem;
@@ -43,4 +46,5 @@
   
   .meal-item-actions {
     margin-bottom: 1.5rem;
+    font-family: 'Lato', sans-serif;
   }
