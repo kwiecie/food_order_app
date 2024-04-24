@@ -26,8 +26,7 @@ export default function MealItemForm (props) {
     }
     return (
         <form className={styles.form} onSubmit={submitHandler}>
-            <Input 
-                // id={props.id}
+            <Input
                 ref={quantityInputRef}
                 label="Quantity"
                 input={{

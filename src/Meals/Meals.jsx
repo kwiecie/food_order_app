@@ -2,31 +2,28 @@ import React, { useEffect, useState } from 'react';
 
 import MealItem from "./MealItem";
 import styles from './Meals.module.css';
+//import errStyles from '../util/Error.module.css';
+import useHttp from '../hooks/useHttp';
+import Error from '../util/Error';
+
+const requestConfig = {};
 
 export default function Meals () {
-  const [loadedMeals, setLoadedMeals] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const {
+    data : loadedMeals, 
+    isLoading, 
+    error
+  } =  useHttp('http://localhost:3000/mealss', requestConfig, []);
 
-  useEffect(() => {
-    const fetchMeals = async () => {
-      try {
-        const response = await fetch('http://localhost:3000/meals');
-        if (!response.ok) {
-          throw new Error(`HTTP error: Status ${response.status}`);
-        }
-        const meals = await response.json();
-        setLoadedMeals(meals);
-        setError (null);
-      } catch (err) {
-        setError(err.message);
-        setLoadedMeals([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchMeals();
-  }, []);
+  if (isLoading) {
+    return (
+      <div className={styles.loader}></div>
+      )
+  }
+
+  if (error) {
+    return <Error className={styles.error} title='Failed to fetch meals :(' message={error} />
+  }
 
     const mealList = loadedMeals.map(meal => (
         <MealItem 

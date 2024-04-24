@@ -1,6 +1,8 @@
+import styles from './Button.module.css';
+
 export default function Button ({ children, textOnly, className, ...props }) {
-    const cssClasses = textOnly ? `text-button ${className}` : `button ${className}`;
+    //const cssClasses = 'button-alt' ? `text-button ${className}` : `button ${className}`;
     return (
-        <button className={cssClasses} {...props}>{children}</button>
+        <button className={styles.button} {...props}>{children}</button>
     )
 }

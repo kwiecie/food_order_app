@@ -8,13 +8,14 @@
     align-items: center;
     border-radius: 25px;
     font-weight: bold;
-    background-color: #312c1d;
-    color: #ffff;
+    background-color: #d8a601;
+    color: #312c1d;
+    box-shadow: 5px 5px 1px #bd9101 inset;
   }
   
   .button:hover,
   .button:active {
-    background-color: #1d1a16;
+    background-color: #bd9101;
   }
   
   .icon {
@@ -30,6 +31,7 @@
     font-weight: bold;
     color: #312c1d;
     background-color: #ffc404;
+    box-shadow: 5px 5px 1px #bd9101;
   }
   
   .button:hover .badge,

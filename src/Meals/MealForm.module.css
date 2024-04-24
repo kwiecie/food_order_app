@@ -3,17 +3,3 @@
     justify-content: space-around;
     align-items: center;
   }
-  
-  .form button {
-    font-family: 'Lato', sans-serif;
-    cursor: pointer;
-    padding: 0.25rem 2rem;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  
-  .form button:hover,
-  .form button:active {
-    background-color: #1d1a16;
-    color: #ffab04;
-  }

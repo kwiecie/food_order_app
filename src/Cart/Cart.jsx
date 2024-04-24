@@ -47,8 +47,8 @@ export default function Cart (props) {
                 <span>Total Amount:</span>
                 <span>{totalAmount}</span>
             </div>
-            <div className={styles.actions}>
-                <button className={styles['button--alt']} onClick={userProgressCtx.hideCart}>Close</button>
+            <div className={styles['modal-actions']}>
+                <Button className={styles['button--alt']} onClick={userProgressCtx.hideCart}>Close</Button>
                 {cartCtx.items.length > 0 && <Button className={styles.button} onClick={userProgressCtx.showCheckout}>Order</Button>}
             </div>
         </Modal>
