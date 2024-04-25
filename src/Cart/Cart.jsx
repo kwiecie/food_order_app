@@ -40,7 +40,7 @@ export default function Cart (props) {
     
     return (
         <Modal onClose={props.onCloseCart}  open={userProgressCtx.progress === 'cart'}>
-            <ul className={styles.cart}>
+            <ul  className={styles.cart}>
                 {cartItems}
             </ul>
             <div className={styles['cart-total']}>

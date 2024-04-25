@@ -38,7 +38,7 @@ export default function MealItemForm (props) {
                     defaultValue: '1',
                 }}
             />
-            <Button>Add</Button>
+            <Button className={styles.button}>Add</Button>
             {!quantityIsValid && <p>Please enter a valid quantity (1-5)!</p>}
         </form>
     )

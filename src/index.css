@@ -111,11 +111,21 @@ h1 {
   margin: 1rem 0;
 }
 
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1__qem;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px
+}
+/* 
 .cart ul {
   list-style: none;
   margin: 1rem;
   padding: 0;
-}
+} */
 
 .modal-actions {
   display: flex;
