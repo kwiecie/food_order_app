@@ -1,11 +1,64 @@
 .form {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.error {
+  font-size: 12px;
+}
+
+.quantity-button {
+  background-color: #ffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 3px 0 3px;
+}
+
+.quantity-disabled {
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 3px 0 3px;
+  background-color: #b4b0a6;
+  color: #ffff;
+}
+
+#quantity {
+  height: 2rem;
+  width: 2rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+}
+
+.quantity-button:hover,
+.quantity-button:active {
+  background-color: #1d1a16;
+  color: #ffff;
+}
 
 .button {
-  font-family: 'Lato', sans-serif;
   cursor: pointer;
   padding: 0.25rem 2rem;
   border-radius: 20px;
