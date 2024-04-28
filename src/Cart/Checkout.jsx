@@ -20,7 +20,13 @@ export default function Checkout(props) {
     const cartCtx = useContext(CartContext);
     const userProgressCtx = useContext(UserProgressContext);
 
-    const { data, isLoading: isSending, error, sendRequest, clearData } = useHttp('http://localhost:3000/orders', requestConfig);
+    const { 
+        data, 
+        isLoading: isSending, 
+        error, 
+        sendRequest, 
+        clearData 
+    } = useHttp('https://adorable-pie-8b5577.netlify.app/orders', requestConfig);
 
     const handleHideCheckout = () => {
         userProgressCtx.hideCheckout();

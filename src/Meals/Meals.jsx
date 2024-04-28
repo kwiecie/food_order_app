@@ -13,7 +13,7 @@ export default function Meals () {
     data : loadedMeals, 
     isLoading, 
     error
-  } =  useHttp('http://localhost:3000/meals', requestConfig, []);
+  } =  useHttp('https://adorable-pie-8b5577.netlify.app/meals', requestConfig, []);
 
   if (isLoading) {
     return (
