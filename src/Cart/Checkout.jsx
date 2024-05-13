@@ -26,7 +26,7 @@ export default function Checkout(props) {
         error, 
         sendRequest, 
         clearData 
-    } = useHttp('https://adorable-pie-8b5577.netlify.app/orders', requestConfig);
+    } = useHttp('http://localhost:3000/orders', requestConfig);
 
     const handleHideCheckout = () => {
         userProgressCtx.hideCheckout();
@@ -79,7 +79,7 @@ export default function Checkout(props) {
 
     return (
         <Modal onClose={handleHideCheckout} open={userProgressCtx.progress === 'checkout'}>
-            <form onSubmit={handleSubmit} className={styles.control}>
+            <form onSubmit={handleSubmit} className={styles.control} id="form">
                 <h2>Checkout</h2>
                 <p className={styles.control}>Total amount: {currencyFormatter.format(cartCtx.totalAmount)}</p>
                 <Input label="Full name" type="text" id="name" className={styles['control-row']}/>
