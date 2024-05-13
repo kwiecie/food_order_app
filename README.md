@@ -43,10 +43,20 @@ npm run build
 
 ## Features
 
-Application allows to browse available meals and add them to a cart. 
+Application allows to browse available meals
 ![Application Preview](/media/main_page.jpg)
 
-Mini cart shows how many products are currently added. 
+and adding products to a cart. 
+![Adding to a cart](/media/adding_to_cart.jpg)
+
+Mini cart shows how many products are currently added.
+![Mini Cart](/media/mini_cart_update.jpg) 
+
 When cart is clicked you can check added product and change the quantity of them. 
+![Cart](/media/cart.jpg)
+
 After proceeding to checkout, user has to fill up a form to place an order. 
+![Checkout](/media/checkout_validation.jpg)
+
 If form if filled correctly, order is being send to backend, and user get an confirmation on screen.
+![Success](/media/checkout_success.jpg)
