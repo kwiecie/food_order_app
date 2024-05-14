@@ -1,6 +1,6 @@
 # Foodini
 
-This is an online food ordering application built using React for the frontend and Express.js for the backend.
+:pizza: This is an online food ordering application built using React for the frontend and Express.js for the backend.:pizza:
 
 Features
 - **Browse Menu:** Users can view the available food items.
